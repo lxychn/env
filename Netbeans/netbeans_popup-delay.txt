@@ -1,0 +1,7 @@
+add this to %USERPROFILE%/.netbeans/6.5/config/Editors/text/x-java/Preferences/org-netbeans-modules-editor-settings-CustomPreferences.xml
+
+<entry javaType="java.lang.Integer" name="completion-auto-popup-delay" xml:space="preserve">
+    <value><![CDATA[100]]></value>
+</entry>
+
+the value is in ms

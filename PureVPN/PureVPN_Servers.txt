@@ -1,0 +1,23 @@
+purevpn0s3557188
+ 
+guangzhou
+s351104.pointtoserver.com
+ 
+beijing
+s351102.pointtoserver.com
+s351103.pointtoserver.com
+ 
+shanghai
+s351104.pointtoserver.com
+ 
+los angeles
+sx013101.pointtoserver.com
+ 
+chicago
+sx016201.pointtoserver.com
+ 
+tokyo
+sx330702.pointtoserver.com
+ 
+London
+sx021601.pointtoserver.com

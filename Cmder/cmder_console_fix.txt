@@ -1,0 +1,7 @@
+﻿replace two lambda "λ" in file \cmder\vendor\clink.lua with "$"
+
+if env == nil then
+    lambda = "$"
+else
+    lambda = "("..env..") $"
+end

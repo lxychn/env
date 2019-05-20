@@ -1,0 +1,32 @@
+[user]
+name = xuanyu
+email = lxychn@gmail.com
+
+[core]
+editor = subl -n -w
+
+[alias]
+amend = commit --amend
+ll = xl -20
+pdiff = difftool origin/HEAD HEAD
+st = status --porcelain
+xl = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(bold yellow)%d%C(reset) - %C(bold cyan)%ai%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(reset)%n %C(white)%s%C(reset)' -5
+
+[mergetool "Kaleidoscope"]
+cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+trustexitcode = true
+
+[merge]
+tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+prompt = false
+
+[mergetool]
+prompt = false
+
+[diff]
+tool = Kaleidoscope

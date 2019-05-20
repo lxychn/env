@@ -1,0 +1,22 @@
+# Terminal
+export PS1='\n\u@\h:\w\n\$ '
+
+# Python
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+# git function
+function git {
+    if [[ "$1" == "diff" ]]; then
+        shift 1
+        command git difftool "$@"
+    elif [[ "$1" == "merge" ]]; then
+        shift 1
+        command git mergetool "$@"
+    elif [[ "$1" == "commit" && "$2" == "" ]]; then
+        shift 1
+        command git add -A
+        command git commit -a "$@"
+    else
+        command git "$@"
+    fi
+}
